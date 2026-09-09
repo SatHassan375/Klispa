@@ -71,9 +71,9 @@
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const heroImages = [
-  "/src/assets/images/hero-swap-1.png",
-  "/src/assets/images/hero-swap-2.png",
-  "/src/assets/images/hero-swap-3.png",
+  "src/assets/images/hero-swap-1.png",
+  "src/assets/images/hero-swap-2.png",
+  "src/assets/images/hero-swap-3.png",
 ];
 
 const currentImage = ref(0);
