@@ -1,0 +1,200 @@
+:root {
+  /* =========================================================
+     Fonts
+     ========================================================= */
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  --header-height: 78px;
+
+  /* =========================================================
+     Colors
+     ========================================================= */
+
+  /* Brand */
+  --color-primary: #544bb6;
+  --color-primary-light: #6d5ce0;
+  --color-primary-soft: #b192fa;
+
+  /* Additional brand tones */
+  --color-indigo: #5459db;
+  --color-purple-muted: #988bc8;
+  --color-purple-deep: #331a5c;
+
+  /* Text */
+  --color-text-primary: #1d1b20;
+  --color-text-secondary: #757575;
+  --color-text-muted: #948bb7;
+
+  /* Backgrounds */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-background: #ffffff;
+  --color-background-soft: #f9f8ff;
+
+  /* Dark sections */
+  --color-dark: #1d1b20;
+  --color-dark-purple: #331a5c;
+
+  /* Error / destructive */
+  --color-error: #da383c;
+  --color-error-soft: #ffebeb;
+
+  /* Borders */
+  --color-border: #e0e1fe;
+  --color-border-error: #ffc3c3;
+
+  /* Additional neutral */
+  --color-neutral: #afaabf;
+
+  /* Relationship scroll section (RelationshipSection/Block/FeatureItem) */
+  --ink: #1d1b20;
+  --ink-soft: #6b6478;
+  --ink-faint: #b3accb;
+  --card-bg: #f7f6ff;
+  --border-soft: #ece8f7;
+  --page-bg: #ffffff;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* =========================================================
+     Typography
+     ========================================================= */
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --text-xs: 0.6875rem; /* 11px */
+  --text-sm: 0.75rem; /* 12px */
+  --text-md: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.5rem; /* 56px */
+
+  /* Responsive display sizes */
+  --text-display: clamp(2.75rem, 5vw, 4rem);
+  --text-section: clamp(1.75rem, 3vw, 2.5rem);
+  --text-feature: clamp(1.25rem, 2vw, 1.5rem);
+
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* =========================================================
+     Spacing
+     ========================================================= */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --space-13: 128px;
+
+  /* =========================================================
+     Border Radius
+     ========================================================= */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* =========================================================
+     Borders
+     ========================================================= */
+
+  --border-width: 1px;
+  --border-width-thick: 2px;
+
+  /* =========================================================
+     Shadows
+     ========================================================= */
+
+  --shadow-sm: 0 2px 8px rgba(29, 27, 32, 0.06);
+
+  --shadow-md: 0 8px 24px rgba(29, 27, 32, 0.1);
+
+  --shadow-lg: 0 16px 48px rgba(29, 27, 32, 0.14);
+
+  /* =========================================================
+     Layout
+     ========================================================= */
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-max: 1280px;
+
+  --gutter: 24px;
+
+  /* =========================================================
+     Breakpoints
+     ========================================================= */
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 900px;
+  --breakpoint-xl: 1200px;
+
+  /* =========================================================
+     Transitions
+     ========================================================= */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* =========================================================
+     Z-index
+     ========================================================= */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* =============================================================
+   Responsive tokens
+   ============================================================= */
+
+@media (max-width: 900px) {
+  :root {
+    --gutter: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+
+    --space-10: 56px;
+    --space-11: 64px;
+    --space-12: 80px;
+    --space-13: 96px;
+  }
+}

@@ -1,0 +1,51 @@
+/* =========================================================
+   Text Colors
+   ========================================================= */
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-brand {
+  color: var(--color-primary);
+}
+
+.text-brand-light {
+  color: var(--color-primary-light);
+}
+
+.text-brand-soft {
+  color: var(--color-primary-soft);
+}
+
+.text-indigo {
+  color: var(--color-indigo);
+}
+
+.text-purple {
+  color: var(--color-purple-muted);
+}
+
+.text-purple-deep {
+  color: var(--color-purple-deep);
+}
+
+.text-error {
+  color: var(--color-error);
+}
