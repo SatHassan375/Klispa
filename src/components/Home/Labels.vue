@@ -13,37 +13,27 @@
       <div class="marquee-fade marquee-fade-left"></div>
 
       <div class="marquee-track">
-        <!-- Group 1 -->
-        <div class="labels-list">
+        <!--
+          Repeated 5x (not just duplicated once) so the track stays wider
+          than the viewport at every point in the loop, even on wide
+          desktop screens - otherwise the marquee runs out of content and
+          shows a blank gap right before it resets.
+        -->
+        <div
+          v-for="group in 5"
+          :key="`group-${group}`"
+          class="labels-list"
+          :aria-hidden="group > 1 ? 'true' : undefined"
+        >
           <div
             v-for="label in labels"
-            :key="`first-${label.name}`"
+            :key="`${group}-${label.name}`"
             class="label-chip"
           >
             <img
               v-if="label.icon"
               :src="label.icon"
-              :alt="`${label.name} icon`"
-              class="label-icon"
-            />
-
-            <span v-else class="label-icon-placeholder"></span>
-
-            <span>{{ label.name }}</span>
-          </div>
-        </div>
-
-        <!-- Group 2 - duplicate for infinite loop -->
-        <div class="labels-list" aria-hidden="true">
-          <div
-            v-for="label in labels"
-            :key="`second-${label.name}`"
-            class="label-chip"
-          >
-            <img
-              v-if="label.icon"
-              :src="label.icon"
-              alt=""
+              :alt="group === 1 ? `${label.name} icon` : ''"
               class="label-icon"
             />
 
@@ -161,6 +151,7 @@ const labels = [
   width: max-content;
 
   animation: labels-scroll 24s linear infinite;
+  will-change: transform;
 }
 
 /*
@@ -282,7 +273,8 @@ const labels = [
   }
 
   to {
-    transform: translateX(-50%);
+    /* one group's worth of the 5 repeated groups in .marquee-track */
+    transform: translateX(-20%);
   }
 }
 

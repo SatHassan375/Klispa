@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Home2 from "../views/Home-v2.vue";
 import Home3 from "../views/Home-v3.vue";
+import Home4 from "../views/Home-v4.vue";
 import About from "../views/About.vue";
 
 const router = createRouter({
@@ -11,6 +12,7 @@ const router = createRouter({
     { path: "/about", name: "about", component: About },
     { path: "/home-v2", name: "home-v2", component: Home2 },
     { path: "/home-v3", name: "home-v3", component: Home3 },
+    { path: "/home-v4", name: "home-v4", component: Home4 },
   ],
   scrollBehavior() {
     return { top: 0 };
