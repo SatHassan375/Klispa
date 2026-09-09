@@ -61,38 +61,47 @@
 </template>
 
 <script setup>
+import soulmateIcon from "../../assets/images/labels/soulmate-icon.svg";
+import moonIcon from "../../assets/images/labels/moon-icon.svg";
+import fireIcon from "../../assets/images/labels/fire-icon.svg";
+import constantIcon from "../../assets/images/labels/constant-icon.svg";
+import personIcon from "../../assets/images/labels/person-icon.svg";
+import safeSpaceIcon from "../../assets/images/labels/safe-space-icon.svg";
+import thisCircleIcon from "../../assets/images/labels/this-circle-icon.svg";
+import legacyIcon from "../../assets/images/labels/legacy-icon.svg";
+
 const labels = [
   {
     name: "Soulmate",
-    icon: "/src/assets/images/labels/soulmate-icon.svg",
+    icon: soulmateIcon,
   },
   {
     name: "Situationship",
-    icon: "/src/assets/images/labels/moon-icon.svg",
+    icon: moonIcon,
   },
   {
     name: "Flame",
-    icon: "/src/assets/images/labels/fire-icon.svg",
+    icon: fireIcon,
   },
   {
     name: "Constant",
-    icon: "/src/assets/images/labels/constant-icon.svg",
+    icon: constantIcon,
   },
   {
     name: "Person",
-    icon: "/src/assets/images/labels/person-icon.svg",
+    icon: personIcon,
   },
   {
     name: "Safe Space",
-    icon: "/src/assets/images/labels/safe-space-icon.svg",
+    icon: safeSpaceIcon,
   },
   {
     name: "The Circle",
-    icon: "/src/assets/images/labels/this-circle-icon.svg",
+    icon: thisCircleIcon,
   },
   {
     name: "Legacy",
-    icon: "/src/assets/images/labels/legacy-icon.svg",
+    icon: legacyIcon,
   },
 ];
 </script>

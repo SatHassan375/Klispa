@@ -69,7 +69,7 @@
             <img
               class="hero-phone-swap left"
               :class="`swap-${currentImage}`"
-              src="/src/assets/images/hero-mobile-1.png"
+              :src="heroMobile1"
               alt="Klipsa heart"
               width="94"
               height="92"
@@ -78,7 +78,7 @@
             <img
               class="hero-phone-swap right"
               :class="`swap-${currentImage}`"
-              src="/src/assets/images/hero-mobile-2.png"
+              :src="heroMobile2"
               alt="Klipsa heart"
               width="187"
               height="184"
@@ -91,12 +91,13 @@
 </template>
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
+import heroSwap1 from "../../assets/images/hero-swap-1.png";
+import heroSwap2 from "../../assets/images/hero-swap-2.png";
+import heroSwap3 from "../../assets/images/hero-swap-3.png";
+import heroMobile1 from "../../assets/images/hero-mobile-1.png";
+import heroMobile2 from "../../assets/images/hero-mobile-2.png";
 
-const heroImages = [
-  "/src/assets/images/hero-swap-1.png",
-  "/src/assets/images/hero-swap-2.png",
-  "/src/assets/images/hero-swap-3.png",
-];
+const heroImages = [heroSwap1, heroSwap2, heroSwap3];
 
 // Unsplash thumbnail crops (80x80, face-cropped) used as placeholder
 // profile pictures for the "people already on the list" row.

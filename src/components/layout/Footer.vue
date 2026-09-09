@@ -143,7 +143,7 @@
           <div class="footer--socials">
             <a href="#" aria-label="Facebook" class="social--icon">
               <img
-                src="/src/assets/images/facebook-footer-icon.svg"
+                :src="facebookIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -153,7 +153,7 @@
 
             <a href="#" aria-label="Instagram" class="social--icon">
               <img
-                src="/src/assets/images/instagram-footer-icon.svg"
+                :src="instagramIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -163,7 +163,7 @@
 
             <a href="#" aria-label="X" class="social--icon">
               <img
-                src="/src/assets/images/x-footer-icon.svg"
+                :src="xIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -173,7 +173,7 @@
 
             <a href="#" aria-label="YouTube" class="social--icon">
               <img
-                src="/src/assets/images/youtube-footer-icon.svg"
+                :src="youtubeIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -183,7 +183,7 @@
 
             <a href="#" aria-label="Pinterest" class="social--icon">
               <img
-                src="/src/assets/images/pintrest-footer-icon.svg"
+                :src="pinterestIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -193,7 +193,7 @@
 
             <a href="#" aria-label="TikTok" class="social--icon">
               <img
-                src="/src/assets/images/tiktok-footer-icon.svg"
+                :src="tiktokIcon"
                 width="32"
                 height="32"
                 loading="lazy"
@@ -211,7 +211,7 @@
       </div>
       <!-- Decorative icon -->
       <img
-        src="/src/assets/images/klispa-footer-background.svg"
+        :src="klispaFooterBackground"
         class="klispa--icon-footer"
         width="312"
         height="393"
@@ -225,6 +225,13 @@
 
 <script setup>
 import { ref } from "vue";
+import facebookIcon from "../../assets/images/facebook-footer-icon.svg";
+import instagramIcon from "../../assets/images/instagram-footer-icon.svg";
+import xIcon from "../../assets/images/x-footer-icon.svg";
+import youtubeIcon from "../../assets/images/youtube-footer-icon.svg";
+import pinterestIcon from "../../assets/images/pintrest-footer-icon.svg";
+import tiktokIcon from "../../assets/images/tiktok-footer-icon.svg";
+import klispaFooterBackground from "../../assets/images/klispa-footer-background.svg";
 
 const countries = [
   { name: "English", value: "en" },
