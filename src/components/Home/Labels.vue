@@ -109,6 +109,8 @@ const labels = [
   overflow: hidden;
 
   background: var(--color-white);
+
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
 /* =========================================================

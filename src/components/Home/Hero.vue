@@ -9,7 +9,7 @@
               <br />
               the people who
               <br />
-              actually matter
+              <span class="hero-title__accent">actually matter</span>
             </h1>
           </div>
           <!-- Visual -->
@@ -105,12 +105,11 @@ onBeforeUnmount(() => {
 }
 .hero {
   position: relative;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   margin: 0 auto;
   padding-top: 170px;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .hero-inner {
@@ -122,7 +121,6 @@ onBeforeUnmount(() => {
   align-items: center;
   padding-inline: 16px;
   justify-content: space-between;
-  max-width: 1680px;
 }
 .hero-phone {
   width: 100%;
@@ -233,7 +231,7 @@ onBeforeUnmount(() => {
 .hero-content {
   flex: 1 1 320px;
   min-width: 0;
-  padding-left: calc(80px - var(--space-4));
+  /* padding-left: calc(80px - var(--space-4)); */
 }
 
 .hero-title {
@@ -244,6 +242,16 @@ onBeforeUnmount(() => {
   line-height: 120%;
   font-weight: 700;
   text-wrap: balance;
+}
+
+.hero-title__accent {
+  background: linear-gradient(105deg, #f4e8ff 0%, #d7b5ff 48%, #e8b7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
@@ -270,7 +278,7 @@ onBeforeUnmount(() => {
   flex: 1 1 380px;
   min-width: 0;
   max-width: 750px;
-  padding-right: calc(36px - var(--space-4));
+  /* padding-right: calc(36px - var(--space-4)); */
 }
 .hero-phone-swap {
   position: absolute;
@@ -284,8 +292,8 @@ onBeforeUnmount(() => {
   top: -9%;
 }
 .hero-phone-swap.right {
-  right: 5%;
-  top: -3%;
+  right: -7%;
+  top: -4%;
 }
 
 .hero-phone-swap.left.swap-0 {

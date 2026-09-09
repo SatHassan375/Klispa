@@ -131,6 +131,7 @@ onUnmounted(() => {
   --accent-soft: #edeafc;
   padding: 112px 0 0;
   background: var(--page-bg);
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
 .rel-heading {

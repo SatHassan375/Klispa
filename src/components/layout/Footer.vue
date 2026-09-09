@@ -66,7 +66,7 @@
             <nav class="footer--nav" aria-label="Product navigation">
               <a href="#features">Features</a>
               <a href="#wrapped">Wrapped</a>
-              <a href="#mutual-features">Mutual Features</a>
+              <a href="#relationships_cards">Mutual Features</a>
               <a href="#labels">Labels</a>
               <a href="#proximity">Proximity</a>
               <a href="#memories">Memories</a>

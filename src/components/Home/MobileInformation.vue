@@ -1,8 +1,9 @@
 <template>
-  <section class="container--medium feature-story" id="features_story">
+  <section class="container--medium feature-story" id="features">
     <div
       v-for="feature in features"
       :key="feature.id"
+      :id="feature.anchor"
       class="feature"
       :class="`feature--${feature.imagePosition}`"
     >
@@ -82,6 +83,7 @@ const features = [
     id: 4,
     image: meetupVideo,
     imagePosition: "right",
+    anchor: "proximity",
     eyebrow: "Proximity meetups",
     title: "Meet when the moment is right.",
     description:
@@ -89,19 +91,21 @@ const features = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: memoryVideo,
     imagePosition: "left",
+    anchor: "memories",
     eyebrow: "A quiet archive",
     title: "Memories you both name, tagged with how it felt",
     description:
     "Not a camera roll. A named, dated collection of moments that mattered, tagged with the mood you were both in when they happened.",
   },
-  
+
   {
-    id: 5,
+    id: 6,
     image: wrappedVideo,
     imagePosition: "right",
+    anchor: "wrapped",
     eyebrow: "Every relationship",
     title: "Every relationship writes its own story.",
     description:
@@ -116,6 +120,7 @@ const features = [
 }
 .feature-story {
   padding-top: 112px;
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
 .feature {
@@ -124,6 +129,7 @@ const features = [
   gap: 72px;
   min-height: 516px;
   padding-bottom: 96px;
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
 /* =========================================================
