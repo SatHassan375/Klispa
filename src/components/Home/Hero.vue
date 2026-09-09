@@ -342,7 +342,7 @@ onBeforeUnmount(() => {
 /* media query */
 @media (max-width: 900px) {
   .hero {
-    min-height: auto;
+    min-height: 100vh;
     padding-block: 96px 60px;
   }
   .hero-inner {
