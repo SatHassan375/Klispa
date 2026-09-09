@@ -40,10 +40,17 @@
 </template>
 
 <script setup>
+import widgetFeatureVideo from "../../assets/gifs/WidgetFeature.mp4";
+import safeSpaceVideo from "../../assets/gifs/SafeSpace.mp4";
+import moodVideo from "../../assets/gifs/Mood.mp4";
+import meetupVideo from "../../assets/gifs/Meetup.mp4";
+import memoryVideo from "../../assets/gifs/Memory.mp4";
+import wrappedVideo from "../../assets/gifs/Wrapped.mp4";
+
 const features = [
   {
     id: 1,
-    image: "src/assets/gifs/WidgetFeature.mp4",
+    image: widgetFeatureVideo,
     imagePosition: "left",
     eyebrow: "A PHOTO ON THEIR HOME SCREEN",
     title: "A little piece of your day on their screen.",
@@ -53,7 +60,7 @@ const features = [
 
   {
     id: 2,
-    image: "src/assets/gifs/SafeSpace.mp4",
+    image: safeSpaceVideo,
     imagePosition: "right",
     eyebrow: "SAVE SPACE",
     title: "Some conversations should stay between you two.",
@@ -63,7 +70,7 @@ const features = [
 
   {
     id: 3,
-    image: "src/assets/gifs/Mood.mp4",
+    image: moodVideo,
     imagePosition: "left",
     eyebrow: "Mood & chat",
     title: "See how they're feeling, not just if they're online",
@@ -73,7 +80,7 @@ const features = [
 
   {
     id: 4,
-    image: "src/assets/gifs/Meetup.mp4",
+    image: meetupVideo,
     imagePosition: "right",
     eyebrow: "Proximity meetups",
     title: "Meet when the moment is right.",
@@ -83,7 +90,7 @@ const features = [
 
   {
     id: 4,
-    image: "src/assets/gifs/Memory.mp4",
+    image: memoryVideo,
     imagePosition: "left",
     eyebrow: "A quiet archive",
     title: "Memories you both name, tagged with how it felt",
@@ -93,7 +100,7 @@ const features = [
   
   {
     id: 5,
-    image: "src/assets/gifs/Wrapped.mp4",
+    image: wrappedVideo,
     imagePosition: "right",
     eyebrow: "Every relationship",
     title: "Every relationship writes its own story.",
