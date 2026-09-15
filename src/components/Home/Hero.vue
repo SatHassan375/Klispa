@@ -175,6 +175,7 @@ onBeforeUnmount(() => {
   flex-direction: column;
   gap: 24px;
   padding-bottom: 34px;
+  margin-top: 4%;
 }
 .hero-join .btn-white {
   font-size: 14px;
