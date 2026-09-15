@@ -23,7 +23,7 @@ const iconMarkup = computed(() => icons[props.feature.icon] || icons.gift);
 <style scoped>
 .feature-item {
   display: grid;
-  grid-template-columns: 22px 1fr;
+  grid-template-columns: 34px 1fr;
   gap: 14px;
   align-items: start;
   padding: 10px 0;
@@ -36,8 +36,8 @@ const iconMarkup = computed(() => icons[props.feature.icon] || icons.gift);
 }
 
 .feature-item__icon {
-  width: 20px;
-  height: 20px;
+  width: 34px;
+  height: 34px;
   margin-top: 2px;
   color: var(--accent);
 }
