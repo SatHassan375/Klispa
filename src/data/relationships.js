@@ -103,7 +103,7 @@ export const relationships = [
       },
       {
         key: "removable-without-a-trace",
-        icon: "phone",
+        icon: "link",
         title: "Removable without a trace",
         description: "Lets either person remove the label without leaving a trace.",
       },
@@ -135,13 +135,13 @@ export const relationships = [
       },
       {
         key: "streak-break-warning",
-        icon: "bell",
+        icon: "streakWarning",
         title: "Streak break warning",
         description: "Warns you when your messaging streak is at risk.",
       },
       {
         key: "flame-history",
-        icon: "flameSlash",
+        icon: "history",
         title: "Flame history",
         description: "Keeps a history of your earned Flame streaks.",
       },
@@ -217,7 +217,7 @@ export const relationships = [
       },
       {
         key: "invisible-everywhere",
-        icon: "gift",
+        icon: "invisibleChat",
         title: "Invisible everywhere",
         description: "Keeps the label hidden throughout the visible experience.",
       },
